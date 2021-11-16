@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_lay2"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="auto"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <View
+        android:layout_width="24dp"
+        android:layout_height="2dp"
+        android:background="#364040"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        android:text="CAPTURE YOUR MOMENT"
+        android:textColor="#364040"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/ImageNameEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/ButtonChooseCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn"
+        android:padding="4dp"
+        android:src="@drawable/ic_camera"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:layout_constraintEnd_toEndOf="@+id/ImageNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <Button
+        android:id="@+id/ButtonChooseImage"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_btn2"
+        android:paddingStart="4dp"
+        android:text="galerry"
+        android:textColor="#BDBFBF"
+        android:textSize="22sp"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:layout_constraintStart_toStartOf="@id/ImageNameEditText"
+        android:layout_marginStart="140dp"
+        app:layout_constraintTop_toTopOf="@+id/ButtonChooseCamera" />
+
+
+    <EditText
+        android:id="@+id/ImageNameEditText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_tv"
+        android:hint="Title Photo"
+        android:paddingVertical="10dp"
+        android:paddingStart="10dp"
+        android:textColor="#364040"
+        android:textColorHint="#364040"
+        android:maxLines="1"
+        android:maxLength="100"
+        android:elevation="12dp"
+        android:textSize="24sp"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonChooseCamera" />
+
+    <ImageView
+        android:id="@+id/ButtonUploadImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_btn3"
+        android:padding="4dp"
+        android:src="@drawable/ic_download"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ImageNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/ImageNameEditText" />
+
+    <Button
+        android:id="@+id/DisplayImagesButton"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_btn4"
+        android:paddingStart="4dp"
+        android:text="show all images"
+        android:textColor="#BDBFBF"
+        android:textSize="22sp"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:layout_constraintStart_toStartOf="@+id/ImageNameEditText"
+        app:layout_constraintTop_toTopOf="@+id/ButtonUploadImage" />
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/ImageNameEditText">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/ButtonUploadImage"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:text="Upload" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/DisplayImagesButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="Show All Images" />-->
+
+    <!--    </LinearLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

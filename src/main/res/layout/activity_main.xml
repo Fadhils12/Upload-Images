@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#d7d8d8">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/camera_log"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <ImageView
+        android:id="@+id/ShowImageView"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="320dp"/>
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firebase Image Upload Tutorial"
+        android:id="@+id/textview"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/ShowImageView"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonChooseImage"
+        android:layout_below="@+id/ShowImageView"
+        android:layout_marginTop="20dp"
+        android:text="Choose Image"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImageNameEditText"
+        android:layout_below="@+id/ButtonChooseImage"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Image Name Here"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonUploadImage"
+        android:layout_below="@+id/ImageNameEditText"
+        android:layout_marginTop="20dp"
+        android:text="Upload image to Firebase Storage"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/DisplayImagesButton"
+        android:layout_below="@+id/ButtonUploadImage"
+        android:text="Show All Uploaded Images"/>-->
+
+    <include layout="@layout/bottom_sheet"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
